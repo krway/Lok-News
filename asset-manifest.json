@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/loknews/static/css/main.5eb91a08.css",
+    "main.js": "/loknews/static/js/main.2de457aa.js",
+    "static/js/787.ab2e45c9.chunk.js": "/loknews/static/js/787.ab2e45c9.chunk.js",
+    "index.html": "/loknews/index.html",
+    "main.5eb91a08.css.map": "/loknews/static/css/main.5eb91a08.css.map",
+    "main.2de457aa.js.map": "/loknews/static/js/main.2de457aa.js.map",
+    "787.ab2e45c9.chunk.js.map": "/loknews/static/js/787.ab2e45c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5eb91a08.css",
+    "static/js/main.2de457aa.js"
+  ]
+}
