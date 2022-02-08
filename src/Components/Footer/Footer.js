@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import React from "react";
 import "./Footer.css";
 
@@ -20,9 +19,6 @@ function Footer() {
             target="__blank"
           >
             <i className="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="#" target="__blank">
-            <i className="fas fa-link fa-2x"></i>
           </a>
         </div>
       </div>
