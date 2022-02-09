@@ -11,19 +11,18 @@ function App() {
   const [loadMore, setLoadMore] = useState(20);
   const [newsResult, setNewsResult] = useState();
 
-  const newsApi = async () => {
-    try {
-      const news = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=${api_key}&category=${category}&pageSize=${loadMore}`
-      );
-      setNewsArray(news.data.articles);
-      setNewsResult(news.data.totalResults);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    const newsApi = async () => {
+      try {
+        const news = await axios.get(
+          `https://newsapi.org/v2/top-headlines?country=in&apiKey=${api_key}&category=${category}&pageSize=${loadMore}`
+        );
+        setNewsArray(news.data.articles);
+        setNewsResult(news.data.totalResults);
+      } catch (error) {
+        console.log(error);
+      }
+    };
     newsApi();
   }, [newsResult, category, loadMore]);
 
