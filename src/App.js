@@ -14,8 +14,10 @@ function App() {
   useEffect(() => {
     const newsApi = async () => {
       try {
+        const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+
         const news = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=in&apiKey=${api_key}&category=${category}&pageSize=${loadMore}`
+          `https://${proxyUrl}newsapi.org/v2/top-headlines?country=in&apiKey=${api_key}&category=${category}&pageSize=${loadMore}`
         );
         setNewsArray(news.data.articles);
         setNewsResult(news.data.totalResults);
